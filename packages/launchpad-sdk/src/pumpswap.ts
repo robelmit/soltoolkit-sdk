@@ -11,7 +11,7 @@
  * that floor, so a 20 % allowance would buy 20 % fewer tokens than asked.
  */
 
-import { canonicalPumpPoolPda } from '@pump-fun/pump-sdk';
+import { canonicalPumpPoolPda } from './pump-sdk';
 import {
   GLOBAL_CONFIG_PDA,
   OnlinePumpAmmSdk,

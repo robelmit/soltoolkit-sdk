@@ -29,7 +29,7 @@ import {
   type BondingCurve,
   type FeeConfig,
   type Global,
-} from '@pump-fun/pump-sdk';
+} from './pump-sdk';
 import { PublicKey, TransactionInstruction, type AccountInfo } from '@solana/web3.js';
 import BN from 'bn.js';
 import { ASSOCIATED_TOKEN_PROGRAM, TOKEN_2022_PROGRAM, TOKEN_PROGRAM, associatedTokenAddress, type DecodedInstruction, type RpcAccount, type SolanaRpc } from './solana';

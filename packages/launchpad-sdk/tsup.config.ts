@@ -9,4 +9,6 @@ export default defineConfig({
   target: 'node20',
   // The venue SDKs stay dependencies of the installer; nothing is bundled in.
   splitting: false,
+  // `import.meta.url` in the CommonJS build (src/pump-sdk.ts loads pump.fun's SDK with `createRequire`).
+  shims: true,
 });
