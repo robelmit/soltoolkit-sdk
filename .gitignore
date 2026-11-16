@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.turbo/
+coverage/
+*.tsbuildinfo
+*.tgz
+
+# Never committed: local settings and anything key-shaped.
+.env
+.env.*
+!.env.example
+
+# Rust
+target/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local data the bots and the demo write
+*.sqlite
+*.sqlite-journal
+data/

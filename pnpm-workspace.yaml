@@ -1,0 +1,14 @@
+packages:
+  - "packages/*"
+  - "examples/*"
+
+# Build scripts are denied by default; these are the explicit decisions.
+#   esbuild places its prebuilt binary in a postinstall step (tsup and vitest need it).
+#   bigint-buffer (pulled in by the pump.fun SDKs), bufferutil and utf-8-validate
+#   (optional accelerators for `ws`, pulled in by @solana/web3.js) all have
+#   pure-JS fallbacks, so no compiler is needed to install this repo.
+allowBuilds:
+  esbuild: true
+  bigint-buffer: false
+  bufferutil: false
+  utf-8-validate: false
