@@ -12,7 +12,8 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['**/node_modules/**', '**/dist/**', '**/coverage/**', '**/.turbo/**', '**/*.d.ts', 'indexer/**'],
+    // ReUI's components are vendored from its registry as they come; they are not this repo's code to lint.
+    ignores: ['**/node_modules/**', '**/dist/**', '**/coverage/**', '**/.turbo/**', '**/*.d.ts', 'indexer/**', '**/components/reui/**'],
   },
 
   js.configs.recommended,
