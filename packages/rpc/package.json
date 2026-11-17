@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "description": "A small Solana JSON-RPC client with pacing and retries, plus base58 and program-derived addresses. No dependencies.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robelmit/soltoolkit-sdk.git",
+    "directory": "packages/rpc"
+  },
+  "homepage": "https://github.com/robelmit/soltoolkit-sdk/tree/main/packages/rpc#readme",
+  "bugs": {
+    "url": "https://github.com/robelmit/soltoolkit-sdk/issues"
+  },
   "keywords": [
     "solana",
+    "rpc",
     "json-rpc",
-    "base58",
-    "pda"
+    "rate-limit"
   ],
   "type": "module",
   "main": "./dist/index.cjs",

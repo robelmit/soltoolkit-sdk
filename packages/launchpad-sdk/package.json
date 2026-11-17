@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "description": "One interface for trading Solana launchpads (pump.fun, PumpSwap, Meteora DBC): quote, build an unsigned transaction, and verify the bytes before signing.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robelmit/soltoolkit-sdk.git",
+    "directory": "packages/launchpad-sdk"
+  },
+  "homepage": "https://github.com/robelmit/soltoolkit-sdk/tree/main/packages/launchpad-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/robelmit/soltoolkit-sdk/issues"
+  },
   "keywords": [
     "solana",
     "pump.fun",
     "pumpswap",
     "meteora",
     "launchpad",
-    "bonding-curve",
-    "sdk"
+    "sdk",
+    "trading"
   ],
   "type": "module",
   "main": "./dist/index.cjs",
